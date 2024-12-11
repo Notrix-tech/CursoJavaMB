@@ -5,3 +5,9 @@ public class tipochar {
         System.out.println(letra);
     }
 }
+
+class Teste {
+    public static void main(String[] args) {
+        System.out.println("Classe de Teste");
+    }
+}
