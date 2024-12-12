@@ -14,11 +14,7 @@ class ValidacaoLogin {
            System.out.println("Login efetuado com sucesso!");
        } else {
            System.out.println("Login ou senha incorretos."); 
-        
-       
-        
-
-}
+       }
         sc.close();
     }
 }
