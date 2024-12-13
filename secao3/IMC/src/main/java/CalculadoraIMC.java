@@ -1,5 +1,8 @@
+package secao3.IMC.src.main.java;
+
 import java.text.DecimalFormat;
 import java.util.Scanner;
+
 
 public class CalculadoraIMC {
     public static void main(String[] args) {
