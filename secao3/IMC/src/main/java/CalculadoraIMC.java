@@ -12,12 +12,12 @@ public class CalculadoraIMC {
         System.out.println("=== Calculadora de IMC - Ministério da Saúde ===");
 
         // Solicitar peso
-        System.out.print("Digite seu peso (em kg): ");
+        System.out.println("Digite seu peso (em kg): ");
         double peso = scanner.nextDouble();
         scanner.nextLine();
 
         // Solicitar altura
-        System.out.print("Digite sua altura (em metros): ");
+        System.out.println("Digite sua altura (em metros): ");
         double altura = scanner.nextDouble();
         scanner.nextLine();
         // Calcular IMC
