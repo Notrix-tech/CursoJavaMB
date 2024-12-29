@@ -38,7 +38,10 @@ public class Funcoes {
     public static int dobrar(int n){
         return n * 2;
     }
+    
 
+
+    // Funções em Java
     public static void verificarStatus(String usuario, String senha){
         if(usuario.equals("Admin") && senha.equals("senha123")){
             System.out.println("Usuário administrador logado com sucesso!");
