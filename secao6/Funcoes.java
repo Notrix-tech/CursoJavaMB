@@ -20,7 +20,7 @@ public class Funcoes {
         System.out.println("oi");
         System.exit(0);
 
-
+        //-Documentação Funções
 
     }
     // funçoes em Java
@@ -45,4 +45,25 @@ public class Funcoes {
        }
        System.out.println("Usuário ou senha inválidos!");
     }
+    /**
+     * 1- Funções sem retorno e sem parâmetros  - void  nomeFuncao() {} - exemplo: void saudacao() {
+     * 
+     * }
+     * @param n1 o primeiro número a ser enviado
+     * @param n2 o segundo número a ser enviado
+     * @param n3 o  terceiro número a ser enviado
+     * @return A média dos números
+     */
+    public static void calcularMedia(double n1, double n2, double n3){
+        double media = (n1 + n2 + n3) / 3;
+        System.out.println("A média é: " + media);
+    }
+    /**
+     * 1- Funções sem retorno e sem parâmetros  - void  nomeFuncao() {} - exemplo: void saudacao() {}
+     * 2- Funções sem retorno e com parâmetros - void nomeFuncao(tipo parametro1, tipo parametro2) {} - exemplo: void soma(int a, int b) {}
+     * 3- Funções com retorno e sem parâmetros - tipo nomeFuncao() {} - exemplo: int dobrar() {}
+     * 4- Funções com retorno e com parâmetros - tipo nomeFuncao(tipo parametro1, tipo parametro2) {} - exemplo: int soma(int a, int b) {}
+     * 
+     * 
+     */
 }
