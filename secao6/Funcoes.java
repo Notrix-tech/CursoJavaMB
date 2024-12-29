@@ -16,12 +16,13 @@ public class Funcoes {
         int resultado2 = dobrar(numero);
         System.out.println("O resultado é: " + resultado2);
         //VerificarStatus
-        verificarStatus("Admin", "senha125");
+        verificarStatus("Admin", "senha123");
         System.out.println("oi");
-        System.exit(0);
 
         //-Documentação Funções
-
+     
+        double resultado9 = calcularMedia(8, 9, 10);
+        System.out.println(resultado9);
     }
     // funçoes em Java
     public static void saudacao() {
@@ -38,32 +39,21 @@ public class Funcoes {
         return n * 2;
     }
 
-    public static void verificarStatus(String usario, String status){
-       if(usario.equals("Admin") && status.equals("senha123")){
-           System.out.println("Usuário administrador logado com sucesso!");
-           System.exit(0);
-       }
-       System.out.println("Usuário ou senha inválidos!");
+    public static void verificarStatus(String usuario, String senha){
+        if(usuario.equals("Admin") && senha.equals("senha123")){
+            System.out.println("Usuário administrador logado com sucesso!");
+            return;
+        }
+        System.out.println("Usuário ou senha inválidos!");
     }
     /**
-     * 1- Funções sem retorno e sem parâmetros  - void  nomeFuncao() {} - exemplo: void saudacao() {
-     * 
-     * }
+     * Calcula a média de três números
      * @param n1 o primeiro número a ser enviado
      * @param n2 o segundo número a ser enviado
-     * @param n3 o  terceiro número a ser enviado
+     * @param n3 o terceiro número a ser enviado
      * @return A média dos números
      */
-    public static void calcularMedia(double n1, double n2, double n3){
-        double media = (n1 + n2 + n3) / 3;
-        System.out.println("A média é: " + media);
+    public static double calcularMedia(double n1, double n2, double n3){
+        return (n1 + n2 + n3) / 3;
     }
-    /**
-     * 1- Funções sem retorno e sem parâmetros  - void  nomeFuncao() {} - exemplo: void saudacao() {}
-     * 2- Funções sem retorno e com parâmetros - void nomeFuncao(tipo parametro1, tipo parametro2) {} - exemplo: void soma(int a, int b) {}
-     * 3- Funções com retorno e sem parâmetros - tipo nomeFuncao() {} - exemplo: int dobrar() {}
-     * 4- Funções com retorno e com parâmetros - tipo nomeFuncao(tipo parametro1, tipo parametro2) {} - exemplo: int soma(int a, int b) {}
-     * 
-     * 
-     */
 }
