@@ -15,6 +15,10 @@ public class Funcoes {
         int numero = 10;
         int resultado2 = dobrar(numero);
         System.out.println("O resultado é: " + resultado2);
+        //VerificarStatus
+        verificarStatus("Admin", "senha125");
+        System.out.println("oi");
+        System.exit(0);
 
 
 
@@ -34,4 +38,11 @@ public class Funcoes {
         return n * 2;
     }
 
+    public static void verificarStatus(String usario, String status){
+       if(usario.equals("Admin") && status.equals("senha123")){
+           System.out.println("Usuário administrador logado com sucesso!");
+           System.exit(0);
+       }
+       System.out.println("Usuário ou senha inválidos!");
+    }
 }
