@@ -1,4 +1,3 @@
-
 package secao6;
 
 import java.util.Scanner;
@@ -17,16 +16,8 @@ public class fatorial {
     /**
      * Calcula o fatorial de um número
      * @param numero    
-     * @return  O fatorial do número
+     * @return O fatorial do número
      */
-
-     public static int fatorial2(int numero) {
-        if(numero == 0 || numero == 1) {
-            return 1;
-        }else{
-            return numero * fatorial2(numero - 1);
-        }
-
     public static BigInteger fatorial(int numero) {
         if(numero == 0 || numero == 1) {
             return BigInteger.ONE;
