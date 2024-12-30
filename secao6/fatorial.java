@@ -19,6 +19,14 @@ public class fatorial {
      * @param numero    
      * @return  O fatorial do número
      */
+
+     public static int fatorial2(int numero) {
+        if(numero == 0 || numero == 1) {
+            return 1;
+        }else{
+            return numero * fatorial2(numero - 1);
+        }
+
     public static BigInteger fatorial(int numero) {
         if(numero == 0 || numero == 1) {
             return BigInteger.ONE;
