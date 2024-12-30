@@ -1,6 +1,8 @@
+
 package secao6;
 
 import java.util.Scanner;
+import java.math.BigInteger;
 
 public class fatorial {
     public static void main(String[] args) {
@@ -8,7 +10,7 @@ public class fatorial {
         System.out.println("Digite um número para calcular o fatorial: ");
         int numero = scan.nextInt();
         scan.nextLine();
-        int resultado = fatorial(numero);
+        BigInteger resultado = fatorial(numero);
         System.out.println("O fatorial de " + numero + " é: " + resultado);
     }
     
@@ -17,11 +19,11 @@ public class fatorial {
      * @param numero    
      * @return  O fatorial do número
      */
-    public static int fatorial(int numero) {
+    public static BigInteger fatorial(int numero) {
         if(numero == 0 || numero == 1) {
-            return 1;
-        }else{
-            return numero * fatorial(numero - 1);
+            return BigInteger.ONE;
+        } else {
+            return BigInteger.valueOf(numero).multiply(fatorial(numero - 1));
         }
     }
 }
