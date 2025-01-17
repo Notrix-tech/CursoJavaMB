@@ -46,5 +46,31 @@ public class Listas {
                 System.out.println("O valor é impar " + num);
             }
         }
+        // juntar palavras
+        String[] palavras = {"Java", "é", "uma", "linguagem", "orientada", "a", "objetos"};
+        String frase = "";
+        for (String palavra : palavras) {
+            frase += palavra + " ";
+        }
+        System.out.println(frase);
+        //saber seo elemento estar no array
+        char[] letras = {'a', 'e', 'i', 'o', 'u'};
+        char letraProcurada = 'a';
+        for(char letra : letras){
+            if(letra == letraProcurada){
+                System.out.println("A letra " + letraProcurada + " está no array");
+                break;
+            }
+        }
+        //loops com ifs
+        int somasPares = 0;
+        for(int numeroSomado : numeros){
+            System.out.println("O número somado é : " + numeroSomado);
+            if(numeroSomado % 2 == 0){
+                somasPares += numeroSomado;
+            }
+        }
+        System.out.println("A soma dos números pares é : " + somasPares);
+
     }
 }
