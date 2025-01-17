@@ -8,8 +8,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="74181f4d-715a-4818-974a-7db6c7219f5e" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/secao3/IMC/src/main/java/CalculadoraIMC.java" beforeDir="false" afterPath="$PROJECT_DIR$/secao3/IMC/src/main/java/CalculadoraIMC.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/secao3/IMC/target/classes/CalculadoraIMC.class" beforeDir="false" afterPath="$PROJECT_DIR$/secao3/IMC/target/classes/CalculadoraIMC.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/secao2-vaiaveis/Exercicio1.java" beforeDir="false" afterPath="$PROJECT_DIR$/secao2-vaiaveis/Exercicio1.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -105,6 +104,7 @@
       <workItem from="1734653022468" duration="346000" />
       <workItem from="1734653491208" duration="1043000" />
       <workItem from="1735348287900" duration="31000" />
+      <workItem from="1736720415158" duration="331000" />
     </task>
     <servers />
   </component>
