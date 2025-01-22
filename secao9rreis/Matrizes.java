@@ -7,7 +7,7 @@ public class Matrizes {
         int[][] matriz = new int[3][3];
        for (int i = 0; i < matriz.length; i++){
         for (int j = 0 ; j < matriz[i].length; j++){
-            matriz[i][j] = i * j;
+            matriz[i][j] = i + j;
         }
        }
        for (int[] linha : matriz )

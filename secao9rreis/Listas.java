@@ -6,6 +6,8 @@ public class Listas {
         int [] numeros = {1, 2, 3, 4, 5, 10};
         System.out.println("O valor do primeiro elemento é : " + numeros[0]);
 
+        exibirNumeros(numeros);
+
         // Tamaho fixo, só que vazio
         String [] nomes = new String [3];
         nomes[0] = "Maria";
@@ -72,8 +74,15 @@ public class Listas {
         }
         System.out.println("A soma dos números pares é : " + somasPares);
 
-        // exibir valores maiores que um determinado valor
-        int[] valores2 = {1, 2, 3, 4, 5, 6, 7, 30, 9};
+        
 
+    }
+
+    public static void exibirNumeros(int[] array) {
+        for (int valor : array) {
+            System.out.println("Valor: " + valor);
+        }
+
+        
     }
 }
