@@ -2,6 +2,7 @@ package secao9rreis;
 
 import java.util.Arrays;
 import java.util.Scanner;
+import java.util.ArrayList;
 
 public class MaiorNum {
     public static void main(String[] args) {
@@ -38,8 +39,47 @@ public class MaiorNum {
         System.out.println(nomesLinguagem);
 
         // Adcionando novos itens a Array
-        
-       
+        int[] novoArray = new int[valores.length + 2];
+        for (int i = 0; i < valores.length; i++){
+            novoArray[i] = valores[i];
+            novoArray[novoArray.length - 1] = 6;
+        }
+       System.out.println(Arrays.toString(novoArray));
+
+       String[] frutas = {"Maçã", "Banana", "Pera"};
+
+         String[] novaFruta = new String[frutas.length + 1];
+            for (int i = 0; i < frutas.length; i++){
+                novaFruta[i] = frutas[i];
+
+            }
+            novaFruta[novaFruta.length - 1] = "Uva";
+            System.out.println(Arrays.toString(novaFruta));
+
+        // ArrayList
+        ArrayList<String> lista = new ArrayList<>(Arrays.asList("Manga", "Morango", "Abacaxi"));
+        System.out.println(lista);
+        lista.add("Maça");
+        lista.addFirst("Jabuticaba");
+        lista.size();
+        System.out.println(lista);
+
+        System.out.println("REFENCE TRAP");
+        //REFENCE TRAP
+        int[] arrayOriginal = {1, 2, 3, 4, 5};
+        // programou bastante coisa
+        int[] arrayCopia = arrayOriginal;
+        arrayCopia[0] = 1000;
+        System.out.println(Arrays.toString(arrayOriginal));
+        System.out.println(Arrays.toString(arrayCopia));
+
+        System.out.println(" resolvendo REFENCE TRAP");
+        int[] arrayClone = arrayOriginal.clone();
+        arrayClone[0] = 2000;
+        System.out.println(Arrays.toString(arrayOriginal));
+        System.out.println(Arrays.toString(arrayClone));    
+
+
         sc.close();
     }
 }
