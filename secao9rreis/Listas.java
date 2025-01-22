@@ -72,5 +72,8 @@ public class Listas {
         }
         System.out.println("A soma dos números pares é : " + somasPares);
 
+        // exibir valores maiores que um determinado valor
+        int[] valores2 = {1, 2, 3, 4, 5, 6, 7, 30, 9};
+
     }
 }
