@@ -36,6 +36,24 @@ for (int[] linha : matriz) {
 
 System.out.println(Arrays.deepToString(matriz));
 
+// operações vanaçadas com Arrays
+int[] original = { 1,2,2,2,3,5,6};
+int[] copia = Arrays.copyOf(original, 2);
+System.out.println(Arrays.toString(copia));
+int[] copia2 = Arrays.copyOfRange(original, 2, 5);
+System.out.println(Arrays.toString(copia2));    
+int[] copia3 = Arrays.copyOfRange(original, 2, 7);
+System.out.println(Arrays.toString(copia3));
+
+// Arrays.fill()
+int[] arr = new int[5];
+Arrays.fill(arr, 2);
+System.out.println(Arrays.toString(arr));
+
+// Arrays.stream()
+int[] arr2 = {1,2,3,4,5};
+int soma = Arrays.stream(arr2).min().getAsInt();
+System.out.println(soma);
 
 
 
