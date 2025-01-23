@@ -52,7 +52,7 @@ System.out.println(Arrays.toString(arr));
 
 // Arrays.stream()
 int[] arr2 = {1,2,3,4,5};
-int soma = Arrays.stream(arr2).min().getAsInt();
+int soma = Arrays.stream(arr2).sum();
 System.out.println(soma);
 
 
