@@ -57,8 +57,11 @@ System.out.println(soma);
 
 
 
-
-
+//maior numero
+int[] num7 = {1, 2, 3, 40, 50, 200, 7, 9, 100};
+        int max = Arrays.stream(num7).max().getAsInt();
+        System.out.println(Arrays.toString(num7));
+        System.out.println("Maior número: " + max);
 
 
 
