@@ -1,6 +1,6 @@
 package secao9rreis;
 //import java.util.Scanner;
-//import java.util.ArrayList;
+import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.Comparator;
 
@@ -62,6 +62,26 @@ int[] num7 = {1, 2, 3, 40, 50, 200, 7, 9, 100};
         int max = Arrays.stream(num7).max().getAsInt();
         System.out.println(Arrays.toString(num7));
         System.out.println("Maior número: " + max);
+
+
+// Arrays Dinamicos ele inicia vazio
+ArrayList<String> frutas = new ArrayList<>();
+System.out.println("ArrayLista inicia vazio");
+System.out.println(frutas);
+frutas.add("Maça");
+frutas.add("Banana");
+frutas.add("Uva");
+System.out.println(frutas);
+Arrays.sort(frutas.toArray());
+
+String encontreiFruta = "uva";
+
+for (String fruta : frutas){
+    if(fruta.equalsIgnoreCase(encontreiFruta)){
+        System.out.println("Encontrei a fruta: " + encontreiFruta);
+    }
+    System.out.println(fruta);
+}
 
 
 
