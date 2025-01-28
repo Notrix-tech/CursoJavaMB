@@ -8,5 +8,15 @@ public class Executor {
         pessoa.setIdade(30);
 
         pessoa.imprimir();
+       System.out.println("====================================");
+
+        // criar uma conta bancaria
+        ContaBancaria conta1 = new ContaBancaria();
+        conta1.setTitular("jj");
+        conta1.setSaldo(1000);
+        conta1.imprimir();
+
+        
+       
     }
 }
