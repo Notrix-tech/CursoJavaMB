@@ -1,4 +1,4 @@
-package ExerciciosCursoJava;
+package ExerciciosCursoJava.poo;
 /* > Exercício 1: Criando uma Classe Celular
 
     Crie uma classe Celular que tenha as seguintes propriedades: marca, modelo, bateria. 
