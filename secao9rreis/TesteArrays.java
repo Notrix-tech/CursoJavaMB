@@ -6,26 +6,30 @@ import java.util.Arrays;
 
 public class TesteArrays {
     public static void main(String[] args) {
-        // crie um programa que receba um array de inteiros do usuarioe exiba o valor do array invertido
         Scanner in = new Scanner(System.in);
-        // EXERCICIO 1
-        int[] arryOriginal = {1, 2, 3, 4, 5, 6, 7, 8, 9, 10};
-        int[] arryInvertido = new int[arryOriginal.length];
-        for (int i = 0; i < arryOriginal.length; i++) {
-            arryInvertido[i] = arryOriginal[arryOriginal.length - 1 - i];
-        }
-        for (int i = 0; i < arryInvertido.length; i++) {
-            System.out.println(arryInvertido[i]);
-        }
+        
+        exercicio1();
+        exercicio2();
+        exercicio3();
+        exercicio4();
+        exercicio5();
 
-        // EXERCIICO 2
-        /*
-         * ENCONTRAR O LEMENTO MAIS FREQUENTE EM UM ARRAY
-         * DESENVOLVA UM PROGRAMA QUE PREENCHA UM ARRAY DE INTEIROS
-         * E DETERMINE QUAL ELEMENTO APARECE COM MAIOR FREQUENCIA
-         * CASO HAJA EMPATE, EXIBA TODOS OS ELEMENTOS EMPATADOS.
+        in.close();
+    }
 
-         */
+    private static void exercicio1() {
+        int[] arrayOriginal = {1, 2, 3, 4, 5, 6, 7, 8, 9, 10};
+        int[] arrayInvertido = new int[arrayOriginal.length];
+        
+        for (int i = 0; i < arrayOriginal.length; i++) {
+            arrayInvertido[i] = arrayOriginal[arrayOriginal.length - 1 - i];
+        }
+        
+        System.out.println("Array invertido:");
+        System.out.println(Arrays.toString(arrayInvertido));
+    }
+
+    private static void exercicio2() {
         int[] arryFre = {2, 3, 2, 10, 2, 5, 6};
        
         int maisFrequente = arryFre[0];
@@ -42,15 +46,11 @@ public class TesteArrays {
                 maxContagem = contagem;
                 maisFrequente = arryFre[i];
             }
-            System.out.println("O número mais frequente é: " + maisFrequente);
-
         }
+        System.out.println("O número mais frequente é: " + maisFrequente);
+    }
 
-        // exercio 3
-        /*
-         * escreva um programa que receba uma matriz 2d e crei uma mantriz transposta.
-         * onde troca a linha por colunas e imprima a matriz original e a transposta.
-         */
+    private static void exercicio3() {
         int[][] matriz = {
                { 1, 2, 3 },
                 { 4, 5, 6 },
@@ -78,13 +78,9 @@ public class TesteArrays {
             }
             System.out.println();
         }
+    }
 
-        /*
-         * Escreva um programa que receba um arry de inteiros e subistitua todos
-         * os valores negativos por zero. Em seguida, exiba o array modificado e o array
-         * original.
-
-         */
+    private static void exercicio4() {
         int[] numeros = { -1, 2, -3, 4, -5, 6, -7, 8, -9, 10 };
         int[] numerosModificados = new int[numeros.length];
         for (int i = 0; i < numeros.length; i++) {
@@ -105,14 +101,9 @@ public class TesteArrays {
             System.out.print(valor + " ");
         }
         System.out.println();
+    }
 
-
-        /*
-         * Remover elementos duplicados no array
-         * remova os lementos duplicados de um array de inteiros, mantendo apenas a primeira ocorrencia de cada valor.
-         * exiba o array original e o array sem duplicados.
-         */
-
+    private static void exercicio5() {
         int[] numerosDuplicados = {1, 2,2,2,2,3, 4, 2, 5, 6, 3, 7, 8, 1};
        
         ArrayList<Integer> arraySemDuplicados = new ArrayList<>();
@@ -136,25 +127,5 @@ public class TesteArrays {
 
         System.out.println(Arrays.toString(numerosDuplicados));
         System.out.println(arraySemDuplicados);
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-        in.close();
     }
 }

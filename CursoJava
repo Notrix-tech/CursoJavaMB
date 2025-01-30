@@ -1,0 +1,31 @@
+CursoJava
+==================
+public class Celular {
+    private String marca;
+    private String modelo;
+    private int bateria;
+    // Construtor
+    public Celular(){
+
+    }
+
+    public Celular(String marca, String modelo, int bateria){
+        this.marca = marca;
+        this.modelo = modelo;
+        this.bateria = bateria;
+
+    }
+    // metodos
+    public void Ligar(){
+        System.out.println("Celular ligado");
+    }
+    public void Desligar(){
+        System.out.println("Celular desligado");
+    }
+    public void Usar(){
+        bateria -= 10;
+        System.out.println("Celular usado, bateria atual: " + bateria);
+    }
+    // Getters e Setters
+    
+}

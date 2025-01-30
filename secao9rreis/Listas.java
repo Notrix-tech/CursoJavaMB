@@ -2,13 +2,13 @@ package secao9rreis;
 
 public class Listas {
     public static void main(String[] args) {
-        // 1 - Sintaxe de Arreis
+        // 1 - Sintaxe de Arrays
         int [] numeros = {1, 2, 3, 4, 5, 10};
         System.out.println("O valor do primeiro elemento é : " + numeros[0]);
 
         exibirNumeros(numeros);
 
-        // Tamaho fixo, só que vazio
+        // Tamanho fixo, só que vazio
         String [] nomes = new String [3];
         nomes[0] = "Maria";
         nomes[1] = "João";
@@ -17,7 +17,7 @@ public class Listas {
 
         //2 loops em arrays
         //somar todos os elementos de um array
-        // acessar os elemntos e condensar a soma deles em uma variavel
+        // acessar os elementos e condensar a soma deles em uma variável
         int soma = 0;
         for (int i = 0; i < numeros.length; i++) {
             soma += numeros[i];
@@ -48,14 +48,14 @@ public class Listas {
                 System.out.println("O valor é impar " + num);
             }
         }
-        // juntar palavras
+        // Concatenar palavras usando StringBuilder
         String[] palavras = {"Java", "é", "uma", "linguagem", "orientada", "a", "objetos"};
-        String frase = "";
+        StringBuilder fraseBuilder = new StringBuilder();
         for (String palavra : palavras) {
-            frase += palavra + " ";
+            fraseBuilder.append(palavra).append(" ");
         }
-        System.out.println(frase);
-        //saber seo elemento estar no array
+        System.out.println(fraseBuilder.toString().trim());
+        //saber se o elemento está no array
         char[] letras = {'a', 'e', 'i', 'o', 'u'};
         char letraProcurada = 'a';
         for(char letra : letras){
