@@ -7,7 +7,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="74181f4d-715a-4818-974a-7db6c7219f5e" name="Changes" comment="Atz">
+    <list default="true" id="74181f4d-715a-4818-974a-7db6c7219f5e" name="Changes" comment="Update workspace configuration and add new Program setup&#10;&#10;Adjusted the IntelliJ workspace file to reflect changes in run configurations and local tasks. Added a new &quot;Program&quot; configuration with coverage settings and updated associated class files. Removed unused components and synced recent changes in the project's metadata.">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/CursoJavaMB/Exercicio1.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/CursoJavaMB/Exercicio1.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/CursoJavaMB/Variaveis.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/CursoJavaMB/Variaveis.class" afterDir="false" />
@@ -131,7 +131,7 @@
       <workItem from="1738259265392" duration="183000" />
       <workItem from="1738259468142" duration="171000" />
       <workItem from="1738259652491" duration="1074000" />
-      <workItem from="1738341981648" duration="3793000" />
+      <workItem from="1738341981648" duration="4127000" />
     </task>
     <task id="LOCAL-00001" summary="Atz">
       <option name="closed" value="true" />
@@ -147,9 +147,21 @@
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
   </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Atz" />
-    <option name="LAST_COMMIT_MESSAGE" value="Atz" />
+    <MESSAGE value="Update workspace configuration and add new Program setup&#10;&#10;Adjusted the IntelliJ workspace file to reflect changes in run configurations and local tasks. Added a new &quot;Program&quot; configuration with coverage settings and updated associated class files. Removed unused components and synced recent changes in the project's metadata." />
+    <option name="LAST_COMMIT_MESSAGE" value="Update workspace configuration and add new Program setup&#10;&#10;Adjusted the IntelliJ workspace file to reflect changes in run configurations and local tasks. Added a new &quot;Program&quot; configuration with coverage settings and updated associated class files. Removed unused components and synced recent changes in the project's metadata." />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
