@@ -1,9 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<classpath>
-	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER"/>
-	<classpathentry excluding="secao2-vaiaveis/|secao8-ER/|ExerciciosCursoJava/src/" kind="src" path=""/>
-	<classpathentry kind="src" path="ExerciciosCursoJava/src"/>
-	<classpathentry kind="src" path="secao2-vaiaveis"/>
-	<classpathentry kind="src" path="secao8-ER"/>
-	<classpathentry kind="output" path="out/production/CursoJavaMB"/>
-</classpath>
