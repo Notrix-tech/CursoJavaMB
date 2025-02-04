@@ -41,7 +41,7 @@ public class Bilhete {
         System.out.println("Números sorteados: " + Arrays.toString(resultadoSorteio));
 
         int acertos = contarAcertos();
-        System.out.println("Você acertou: " + acertos + "Acertos. ");
+        System.out.println("Você acertou: " + acertos + " Acertos no jogo. ");
         System.out.println();
     }
 
