@@ -21,7 +21,7 @@ public class SimuladorLoteria {
                     int numero = scanner.nextInt();
                     
                     // Validação do número
-                    if(numero < 1 || numero > 60) {
+                    if(numero < 1 || numero > 63) {
                         System.out.println("Número inválido! Digite um número entre 1 e 60.");
                         i--;
                         continue;
