@@ -17,7 +17,7 @@ public class ProdutoEletronico {
 	public String getMarca() {
 		return this.marca;
 	}
-	public void serMarca(String marcar) {
+	public void setMarca(String marca) {
 		this.marca = marca;
 	}
 	
