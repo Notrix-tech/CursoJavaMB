@@ -4,8 +4,8 @@ public class Banco{
 public Banco(double saldo){
   this.saldo = saldo;
 }
-  public void sacar(double valor){
-    // exceção aqui
+  public void sacar(double valor) throws SaldoInsuficiente{
+   throw new SaldoInsificiente(" Vc não tem saldo para sacar" + valor);
   }
   saldo = saldo - valor;
 sout(" Saque de" + valor + " realizado com sucesso ! ")
