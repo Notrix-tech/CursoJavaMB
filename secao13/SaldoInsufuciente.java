@@ -1,4 +1,5 @@
-public class SaldoInsufuciente extends exception{
+public class SaldoInsufuciente extends Exception{
   public SaldoInsufuciente( String msg){
-    super(mensagem)
+    super(msg);
   }
+}
