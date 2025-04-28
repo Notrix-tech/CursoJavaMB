@@ -1,0 +1,1 @@
+Este é um arquivo para o java ler e realizarmos teste de programação em leitura de artquivos com java.
