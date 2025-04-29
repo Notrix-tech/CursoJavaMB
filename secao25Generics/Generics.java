@@ -14,7 +14,31 @@ public class Generics {
          caixa2.adcionar("Hello word");
 
          System.out.println(caixa2.abrir());
+        // 2 - METODOS GENERICOS
+        System.out.println( "Maior valor entre 5 e 10: " + obterMaior(5, 10));
+
+        String[] letras = {"a","b", "c", "d"};
+
+        Integer[] numeros = {1, 34, 45, 56, 999};
+
+        imprimirArray(letras);
+
+        imprimirArray(numeros);
+
+
 
     }
+    //AQUI CRIA O METODOS
+
+    public static <T extends Comparable<T>> T obterMaior(T valor1, T valor2){
+        return (valor1.compareTo(valor2) > 0) ? valor1: valor2;
+
     
+    }
+
+    public static <A> void imprimirArray(A[] array){
+        for(A elemento: array){
+            System.out.print(elemento + ", ");
+        }
+    }
 }
