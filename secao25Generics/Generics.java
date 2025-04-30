@@ -5,17 +5,21 @@ public class Generics {
         
 
         //Quando instancioamos o T é alguma coisa.
-        Caixa<Integer> caixa1 = new Caixa<>();
-        caixa1.adcionar(100);
-
-         System.out.println(caixa1.abrir());
+         Caixa<Integer> caixa1 = new Caixa<>();
+         caixa1.adcionar(100);
 
          Caixa<String> caixa2 = new Caixa<>();
          caixa2.adcionar("Hello word");
 
+
+         System.out.println(caixa1.abrir());
          System.out.println(caixa2.abrir());
+
+
         // 2 - METODOS GENERICOS
         System.out.println( "Maior valor entre 5 e 10: " + obterMaior(5, 10));
+
+        // --------------------------------------------------------------------------
 
         String[] letras = {"a","b", "c", "d"};
 
@@ -25,7 +29,15 @@ public class Generics {
 
         imprimirArray(numeros);
 
+        // 3 -Bounded Types
 
+        Comparador<Integer> comparadorInterios = new Comparador<>();
+
+        System.out.println("O maior numero entre 20 e 10 é :" + comparadorInterios.obterMaior(20, 10));
+
+        Comparador<Double> comparadorDouble = new Comparador<>();
+
+        System.out.println("O maior entre os dois  números é : " + comparadorDouble.obterMaior(20.45, 10.99));
 
     }
     //AQUI CRIA O METODOS
@@ -38,7 +50,7 @@ public class Generics {
 
     public static <A> void imprimirArray(A[] array){
         for(A elemento: array){
-            System.out.print(elemento + ", ");
+            System.out.println(elemento + ", ");
         }
     }
 }
