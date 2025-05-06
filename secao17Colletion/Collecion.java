@@ -74,8 +74,68 @@ public class Collecion {
         numeros.add(60);
         System.out.println(Arrays.toString(numeros.toArray()));
 
+         //ordenou sem minha permissão
+         Set<String> nomes = new HashSet<>();
+         nomes.add("João");
+         nomes.add("Pedro");
+         nomes.add("Ana");
+         nomes.add("carvalho ");
+         nomes.add("Willian");
+ 
+         System.out.println(nomes);
+ 
+         //manteve a ordem que coloquei no Array
+         Set<Integer> num = new LinkedHashSet<>();
+         num.add(23);
+         num.add(45);
+         num.add(45);
+         num.add(1);
+         num.add(100);
+         num.add(600);
+         System.out.println(num);
+ 
+         //TreeSet() reordenou e colocou na ordem 
+         Set<Integer> numeros2 = new TreeSet<>();
+         numeros2.add(45);
+         numeros2.add(12);
+         numeros2.add(12);//nao adciona repetidos
+         numeros2.add(9);
+         numeros2.add(1);
+         System.out.println(numeros);
 
+         Map<String, Integer> idades = new TreeMap<>();
 
+         idades.put("Ana", 12);
+         idades.put("Pedro", 30);
+         idades.put("Clairton", 10);
+         
+ 
+ 
+         System.out.println(idades);
+
+         //iteração com Collections
+         //for-each
+         System.out.println("Imprimindo nome de Pessoas");
+         for(String nomePessoas : nomes){
+           System.out.println(nomePessoas);
+         }
+
+         //iterator- hasNext verifica se ainda tem elementos 
+         Iterator<String> nomesIterator = nomes.iterator();
+         while (nomesIterator.hasNext()) {
+            String nome = nomesIterator.next();
+            if(nome.equals("Pedro"));
+            nomesIterator.remove();
+         }
+         //System.out.println(nomes);
+
+         //tem que ser uma lista
+         ListIterator<String> listIteretorNomes = listaNomes.listIterator();
+         //hasNext iprime o proximo
+         //hasPrevious() iprimi ordem invertido
+         while (listIteretorNomes.hasPrevious()) {
+            System.out.println("Nomes " + listIteretorNomes.previous());
+         }
 
 
     }
