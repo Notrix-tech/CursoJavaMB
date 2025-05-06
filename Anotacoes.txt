@@ -1,0 +1,3 @@
+O que é generics em Java?   
+Generics é um recurso da linguagem Java que permite ao programador criar classes, interfaces e métodos que possam operar com diferentes tipos de dados. Com generics, o programador pode criar componentes que sejam mais flexíveis e reutilizáveis, pois podem ser utilizados com diferentes tipos de dados.
+
