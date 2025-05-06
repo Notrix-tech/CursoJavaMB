@@ -137,6 +137,25 @@ public class Collecion {
             System.out.println("Nomes " + listIteretorNomes.previous());
          }
 
+         //trabalhando com lista Imutaveis
+         /*Coleções imutáveis em Java são coleções que não podem ser modificadas após sua criação. Ou seja, não é possível adicionar, remover ou alterar elementos. Elas são úteis para garantir segurança, integridade dos dados e facilitar o uso em ambientes concorrentes.
 
+        A partir do Java 9, você pode criar coleções imutáveis facilmente usando métodos de fábrica das interfaces List, Set e Map:
+        * List<String> listaImutavel = List.of("A", "B", "C");
+        Set<Integer> setImutavel = Set.of(1, 2, 3);
+        Map<String, Integer> mapImutavel = Map.of("Ana", 10, "Pedro", 20);
+        
+        *Essas coleções são úteis quando você quer garantir que os dados não serão alterados após a criação.
+                */
+
+                List<String> listaMutavel = new ArrayList<>();
+                listaMutavel.add("A");
+                listaMutavel.add("B");
+
+                System.out.println("Lista nao pode mudar");
+                List<String> listaImutavel = Collections.unmodifiableList(listaMutavel);
+                System.out.println(listaImutavel);
+
+    
     }
 }
