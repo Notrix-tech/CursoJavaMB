@@ -1,4 +1,4 @@
-package secao25Generics;
+package secao16Generics;
 //-modelo de classe do tipo delimitador- Bounded Types- Um tipo generico delimitado pelo tipo
 //-por exemplo vamos delimitar para ser so tipo NUmber
 public class Comparador<T extends Number> {

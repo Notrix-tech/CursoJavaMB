@@ -1,4 +1,4 @@
-package secao25Generics;
+package secao16Generics;
 
 public class Caixa<T> {
     private T conteudo;
