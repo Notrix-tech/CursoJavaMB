@@ -1,6 +1,8 @@
 package secao18Stream;
 import java.util.*;
 import java.util.stream.*;
+
+import secao12poo.pessoa.Pessoa;
 public class Stream {
     /*
     Em Java, Stream é uma API que permite processar coleções de dados de forma funcional, declarativa e eficiente. Com streams, você pode filtrar, mapear, ordenar e reduzir dados de listas, conjuntos, mapas, arrays, etc., sem alterar a coleção original.
@@ -104,5 +106,35 @@ public class Stream {
         String frase = nomes.stream()
         .reduce(" ", (concatenador, nome)-> concatenador + " " + nome);
         System.out.println(frase);
+
+        System.out.println("ordenação com comparator");
+        // ordenação com comparator
+        List<Pessoa> pessoas = new ArrayList<>();
+        //instancioando pessoas e adcionando a lista
+        pessoas.add(new Pessoa("Carlos ", 32 ));
+        pessoas.add(new Pessoa("Amanda ", 45 ));
+        pessoas.add(new Pessoa("Gustavo ", 16));
+        pessoas.add(new Pessoa("Kaike ", 39 ));
+        pessoas.add(new Pessoa("Fernando ", 56));
+        pessoas.add(new Pessoa("Nell ", 75 ));
+        pessoas.add(new Pessoa("Pedro ", 23 ));
+        pessoas.add(new Pessoa("Amanda ", 19 ));
+
+        //ordenar pelo nome
+        pessoas.sort(Comparator.comparing(Pessoa::getNome));
+        for(Pessoa exibirListaPessoa: pessoas){
+            System.out.println((exibirListaPessoa));
+        }
+
+        System.out.println("--------nme e idade----------");
+        //ordenando por dois criteiros
+        pessoas.sort(Comparator.comparing(Pessoa::getNome)
+        .thenComparing(Pessoa::getIdade));
+        for(Pessoa  exibirOrdemNomeIdade: pessoas){
+            System.out.println(exibirOrdemNomeIdade);
+        }
+
+
+
     }//main
 }//

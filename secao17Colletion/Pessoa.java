@@ -1,23 +1,16 @@
-package secao12poo.pessoa;
+package secao17Colletion;
 
 public class Pessoa {
-
-    // Atributos e propriedades
     private String nome;
+
     private int idade;
 
-    // Construtor
-    public Pessoa(String nome, int idade) {
+    //#region construtor
+    public Pessoa(String nome, int idade){
         this.nome = nome;
         this.idade = idade;
     }
-
-    // construtor vazio
-    public Pessoa() {
-
-    }
-
-    // Getters e Setters
+    
     public String getNome() {
         return nome;
     }
@@ -33,15 +26,9 @@ public class Pessoa {
     public void setIdade(int idade) {
         this.idade = idade;
     }
-
-    // Metodos
-    public void imprimir() {
-        System.out.println("Nome: " + this.nome);
-        System.out.println("Idade: " + this.idade);
-    }
-
+    //#endregion
     @Override
     public String toString() {
-        return "Pessoa{nome='" + nome + "', idade=" + idade + "}";
-    }
+    return "Pessoa{nome='" + nome + "', idade=" + idade + "}";
 }
+}//fim da classe
